@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hello, CS50!</h1>
+        </header>
+        <div>
+            <ul id="nav-ul">
+                <li class="nav-li"><a class="nav-a" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li class="nav-li toRight noLeftBorder noRightBorder"><a class="nav-a" href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                <li class="nav-li"><a class="nav-a" href="demo1.html"><i class="fa fa-fw fa-calculator"></i>Demo 1</a></li>
+                <li class="nav-li noLeftRight"><a class="nav-a active" href="demo2.html"><i class="fa fa-fw fa-globe"></i>Demo 2</a></li>
+            </ul>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="display-5">
+                    <p>This app will tell you where you are. Click the button below to get your coordinates.</p>
+                </h3>
+            </div>
+        </div>
+        <div class="container">
+            <button id="locateButton" onclick="find()">Locate!</button>
+            <form action="https://www.google.com/maps/search/" method="get">
+                <input id="location" name="q" type="text" readonly>
+                <br>
+                <input type="submit" value="See it in Google Maps">
+            </form>
+        </div>
+    </body>
+    <script src="locate.js"></script>
+</html>

@@ -1,0 +1,109 @@
+header {
+    background-color: wheat;
+    margin-bottom: 0px;
+    /* border: solid black; */
+}
+h1 {
+    margin-bottom: 0px;
+}
+body {
+    background-color: whitesmoke;
+}
+nav {
+    background-color: rgb(3, 71, 47);
+}
+.active {
+    color: cornflowerblue;
+    pointer-events: none;
+    cursor: default;
+}
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+    overflow: hidden;
+}   
+.nav-li {
+    float: left;
+    border-right: 1px solid wheat;
+}
+.nav-a {
+    display: block;
+    padding: 8px;
+}
+.navbar {
+    padding-left: 0px;
+}
+.nav-li a:hover {
+    background-color: rgb(13, 159, 120);
+}
+.noLeftBorder {
+    border-left: none;
+}
+.nav-li:last-child {
+    border-right: none;
+}
+.toRight {
+    float: right;
+}
+.noRightBorder {
+    border-right: none;
+}
+.noLeftBorder {
+    border-left: none;
+}
+.hasLeftBorder {
+    border-left: 1px solid wheat;
+}
+iframe {
+    margin-top: 10px;
+}
+.video-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+#FsYdgKO4AQU {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+p {
+    margin-bottom: 0px;
+}
+aside {
+    padding-left: .5rem;
+    font-style: italic;
+    color: #29627e;
+}
+.calc-element:hover, .varCalc:hover {
+    background-color: burlywood;
+}
+#calculator {
+    padding-bottom: 120px;
+}
+.calc {
+    position: absolute;
+
+}
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    font-size: inherit;
+    outline: none; 
+}
+#locateButton {
+    border: 1px solid black;
+    background-color: floralwhite;
+}
