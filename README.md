@@ -1,5 +1,4 @@
-# Demo
-Demo of some projects from tutorials, personal interest, courses, hobbies, etc. I've been working on:
+# Demo of some projects from tutorials, personal interest, courses, hobbies, etc. I've been working on:
 
 - An obligatory [Hello World](https://romadvincula.github.io/demo/hello/).
 - My solution for CS50's [homepage](https://romadvincula.github.io/demo/cs50/homepage/) problem set.
