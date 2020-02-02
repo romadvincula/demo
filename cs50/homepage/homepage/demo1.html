@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hello, CS50!</h1>
+        </header>
+        <div>
+            <ul id="nav-ul">
+                <li class="nav-li"><a class="nav-a" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li class="nav-li toRight noLeftBorder noRightBorder"><a class="nav-a" href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                <li class="nav-li"><a class="nav-a active" href="demo1.html"><i class="fa fa-fw fa-calculator"></i>Demo 1</a></li>
+                <li class="nav-li noLeftRight"><a class="nav-a" href="demo2.html"><i class="fa fa-fw fa-globe"></i>Demo 2</a></li>
+            </ul>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="display-5">
+                    <p>This is a simple X and Y calculator app written in <strong>Javascript</strong></p>
+                </h3>
+            </div>
+        </div>
+        <div class="container">
+            <p>
+                <button id="setX" class="varCalc" onclick="setVariable(this)" value="x">Set X</button>
+                <button id="setY" class="varCalc" onclick="setVariable(this)" value="y">Set Y</button>
+            </p>
+        </div>
+        <div class="container" id="calculator">
+            <table class="calc">
+                <tr>
+                    <td class="calc-element"><button id="buttonPlus" value="+" class="operator" onclick="calculate(this)">+</button></td>
+                    <td class="calc-element"><button id="button1" value="1" class="number" onclick="operate(this)">1</button></td>
+                    <td class="calc-element"><button id="button2" value="2" class="number" onclick="operate(this)">2</button></td>
+                    <td class="calc-element"><button id="button3" value="3" class="number" onclick="operate(this)">3</button></td>
+                </tr>
+                <tr>
+                    <td class="calc-element"><button id="buttonMinus" value="-" class="operator" onclick="calculate(this)">-</button></td>
+                    <td class="calc-element"><button id="button4" value="4" class="number" onclick="operate(this)">4</button></td>
+                    <td class="calc-element"><button id="button5" value="5" class="number" onclick="operate(this)">5</button></td>
+                    <td class="calc-element"><button id="button6" value="6" class="number" onclick="operate(this)">6</button></td>
+                </tr>
+                <tr>
+                    <td class="calc-element"><button id="buttonMultiply" value="*" class="operator" onclick="calculate(this)">*</button></td>
+                    <td class="calc-element"><button id="button7" value="7" class="number" onclick="operate(this)">7</button></td>
+                    <td class="calc-element"><button id="button8" value="8" class="number"o nclick="operate(this)">8</button></td>
+                    <td class="calc-element"><button id="button9" value="9" class="number" onclick="operate(this)">9</button></td>
+                </tr>
+                <tr>
+                    <td class="calc-element"><button id="buttonDivide" value="/" class="operator" onclick="calculate(this)">/</button id="button0" value="0"></td>
+                    <td class="calc-element"><button id="buttonCancel" value="C" class="operator" onclick="calculate(this)">C</button></td>
+                    <td class="calc-element"><button id="button0" value="0" class="number"onclick="operate(this)">0</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <p id="result">0</p>
+        </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>
